@@ -8,7 +8,7 @@ class GitCardList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(16),
       itemCount: entries.length,
       itemBuilder: (BuildContext context, int index) {
         return Container(
@@ -17,7 +17,6 @@ class GitCardList extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(32.0),
             ),
-            margin: EdgeInsetsDirectional.only(top: 8,bottom: 8),
             elevation: 4,
             child:Row(
               children:[
