@@ -36,17 +36,12 @@ class _TowelState extends State<Towel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        title: searchBar(),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(bottom: Radius.circular(12)),
-        ),
-        toolbarOpacity: 0,
-        bottomOpacity: 0,
-        elevation: 0,
+      body: Row(
+        children: <Widget>[
+          searchBar(),
+          GitCardList(),
+        ],
       ),
-      body: GitCardList(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black,
         onPressed: () {},
