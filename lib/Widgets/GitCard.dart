@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'TowelStyles.dart';
+import '../Styles/TowelStyles.dart';
 
 class GitCard extends StatelessWidget {
   const GitCard({

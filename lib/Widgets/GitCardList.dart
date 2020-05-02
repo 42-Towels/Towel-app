@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'TowelStyles.dart';
+import '../Styles/TowelStyles.dart';
 
 class GitCardList extends StatelessWidget {
   final entries = {'Git1':'info', 'Git2':'info', 'Git3':'info', 'Git4':'informations', 'Git5':'informations', 'Git6':'informations','Git7':'informations'};

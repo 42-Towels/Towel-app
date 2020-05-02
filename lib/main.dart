@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:towels/GitCardList.dart';
-import 'TowelStyles.dart';
-import 'GitCard.dart';
+import 'Widgets/GitCardList.dart';
+import 'Widgets/GitCard.dart';
+import 'Styles/TowelStyles.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -37,7 +38,10 @@ class _TowelState extends State<Towel> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: searchBar(),
-        toolbarOpacity: 1,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(32),
+        ),
+        toolbarOpacity: 0.75,
         bottomOpacity: 0,
         elevation: 0,
         leading: Icon(Icons.all_inclusive, color: Colors.black),
