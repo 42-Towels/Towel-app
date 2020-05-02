@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:towels/customIcons/git_icons.dart';
 import 'Widgets/GitCardList.dart';
 import 'Widgets/GitCard.dart';
 import 'Styles/TowelStyles.dart';
-import 'assets/towel_icons.dart';
 
 
 void main() => runApp(MyApp());
@@ -37,15 +37,14 @@ class _TowelState extends State<Towel> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black54,
+        backgroundColor: Colors.transparent,
         title: searchBar(),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(32),
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(12)),
         ),
-        toolbarOpacity: 0.75,
+        toolbarOpacity: 0,
         bottomOpacity: 0,
         elevation: 0,
-        leading: Icon(TowelIcon.towel),
       ),
       body: GitCardList(),
       floatingActionButton: FloatingActionButton(
@@ -65,7 +64,7 @@ class _TowelState extends State<Towel> {
         hintText: 'Search for git repositories',
         hintStyle: TextStyle(fontSize: 16),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(32),
+          borderRadius: BorderRadius.circular(16),
           borderSide: BorderSide(
             width: 0,
             style: BorderStyle.none,
@@ -80,8 +79,9 @@ class _TowelState extends State<Towel> {
         ),
         filled: true,
         contentPadding: EdgeInsets.all(0),
-        fillColor: Colors.grey[450],
+        fillColor: Colors.grey[500]
       ),
+
     );
   }
 }
