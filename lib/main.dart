@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:towels/GitCardList.dart';
 import 'TowelStyles.dart';
+import 'GitCard.dart';
 
 void main() => runApp(MyApp());
 
@@ -32,31 +35,47 @@ class _TowelState extends State<Towel> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Text(widget._title),
-        // TODO implement search bar
+        backgroundColor: Colors.transparent,
+        title: searchBar(),
+        toolbarOpacity: 1,
+        bottomOpacity: 0,
+        elevation: 0,
+        leading: Icon(Icons.all_inclusive, color: Colors.black),
       ),
-      body: Container(
-        child: Card(
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Git TITLE',
-                style: TowelStyles.gitTitleTextStyle,
-              ),
-              Text(
-                'Git Description',
-                style: TowelStyles.gitDescTextStyle,
-              )
-            ],
-          ),
-        ),
-      ),
+      body: GitCardList(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black,
         onPressed: () {},
         tooltip: 'Add new item',
         child: const Icon(Icons.add),
+      ),
+    );
+  }
+
+  TextField searchBar() {
+    return TextField(
+      textAlign: TextAlign.center,
+      keyboardType: TextInputType.text,
+      decoration: InputDecoration(
+        hintText: 'Search for git repositories',
+        hintStyle: TextStyle(fontSize: 16),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(32),
+          borderSide: BorderSide(
+            width: 0,
+            style: BorderStyle.none,
+          ),
+        ),
+        focusedBorder:  OutlineInputBorder(
+          borderRadius: BorderRadius.circular(32),
+          borderSide: BorderSide(
+            width: 2,
+            style: BorderStyle.none,
+          ),
+        ),
+        filled: true,
+        contentPadding: EdgeInsets.all(0),
+        fillColor: Colors.grey[450],
       ),
     );
   }

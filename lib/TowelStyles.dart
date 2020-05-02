@@ -4,7 +4,7 @@ class TowelStyles {
   // Text styles
   static String _fontFamily = 'Roboto';
 
-  static final titleTextStyle = TextStyle(
+    static final titleTextStyle = TextStyle(
     color: Colors.white,
     fontFamily: _fontFamily,
     fontWeight: FontWeight.bold,
