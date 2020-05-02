@@ -15,7 +15,7 @@ class GitCardList extends StatelessWidget {
           height: 150,
           child: Card(
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15.0),
+              borderRadius: BorderRadius.circular(32.0),
             ),
             margin: EdgeInsetsDirectional.only(top: 8,bottom: 8),
             elevation: 4,
