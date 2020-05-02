@@ -1,10 +1,8 @@
-class GitCardList extends StatelessWidget {
-  const GitCardList({
-    Key key,
-    @required this.entries,
-  }) : super(key: key);
+import 'package:flutter/material.dart';
+import 'TowelStyles.dart';
 
-  final List<String> entries;
+class GitCardList extends StatelessWidget {
+  final List<String> entries = <String>['Git1', 'Git2', 'Git3'];
 
   @override
   Widget build(BuildContext context) {
