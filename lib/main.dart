@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'Widgets/GitCardList.dart';
 import 'Widgets/GitCard.dart';
 import 'Styles/TowelStyles.dart';
+import 'assets/towel_icons.dart';
 
 
 void main() => runApp(MyApp());
@@ -36,7 +37,7 @@ class _TowelState extends State<Towel> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.black54,
         title: searchBar(),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(32),
@@ -44,7 +45,7 @@ class _TowelState extends State<Towel> {
         toolbarOpacity: 0.75,
         bottomOpacity: 0,
         elevation: 0,
-        leading: Icon(Icons.all_inclusive, color: Colors.black),
+        leading: Icon(TowelIcon.towel),
       ),
       body: GitCardList(),
       floatingActionButton: FloatingActionButton(
