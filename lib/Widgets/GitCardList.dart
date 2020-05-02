@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Styles/TowelStyles.dart';
-import '../presentation/git_icons_icons.dart';
+import '../customIcons/git_icons.dart';
 
 class GitCardList extends StatelessWidget {
   final entries = {'Git1':'info', 'Git2':'info', 'Git3':'info', 'Git4':'informations', 'Git5':'informations', 'Git6':'informations','Git7':'informations'};

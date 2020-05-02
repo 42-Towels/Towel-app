@@ -32,4 +32,6 @@ class GitIcons {
   static const IconData git = IconData(0xf1d3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData gitlab = IconData(0xf296, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData github_squared = IconData(0xf300, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+
+  static const IconData towel = IconData(0xf200, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
