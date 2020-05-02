@@ -35,9 +35,10 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   fonts:
-  - family:  Towel
+  - family:  GitIcons
     fonts:
-      - asset: assets/fonts/Towel.ttf
+     - asset: fonts/GitIcons.ttf
+    
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
