@@ -40,18 +40,22 @@ class _TowelState extends State<Towel> {
         backgroundColor: Colors.transparent,
         title: searchBar(),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(bottom: Radius.circular(12)),
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(32)),
         ),
         toolbarOpacity: 0,
         bottomOpacity: 0,
         elevation: 0,
       ),
       body: GitCardList(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black,
-        onPressed: () {},
-        tooltip: 'Add new item',
-        child: const Icon(Icons.add),
+        onPressed: () {
+          // TODO implement adding element to the list
+          print("Adding element");
+        },
+        tooltip: 'Make a new item',
+        child: const Icon(GitIcons.towel),
       ),
     );
   }
@@ -64,24 +68,18 @@ class _TowelState extends State<Towel> {
         hintText: 'Search for git repositories',
         hintStyle: TextStyle(fontSize: 16),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(32),
           borderSide: BorderSide(
             width: 0,
             style: BorderStyle.none,
           ),
         ),
-        focusedBorder:  OutlineInputBorder(
-          borderRadius: BorderRadius.circular(32),
-          borderSide: BorderSide(
-            width: 2,
-            style: BorderStyle.none,
-          ),
-        ),
         filled: true,
         contentPadding: EdgeInsets.all(0),
-        fillColor: Colors.grey[500]
+        fillColor: Colors.grey[350],
+        prefixIcon: Icon(GitIcons.towel, color: Colors.black),
+        suffixIcon: Icon(Icons.search, color: Colors.black,),
       ),
-
     );
   }
 }
