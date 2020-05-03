@@ -4,6 +4,7 @@ import 'package:towels/customIcons/git_icons.dart';
 import 'Widgets/GitCardList.dart';
 import 'Widgets/GitCard.dart';
 import 'Styles/TowelStyles.dart';
+import 'package:flappy_search_bar/flappy_search_bar.dart';
 
 
 void main() => runApp(MyApp());
@@ -42,7 +43,7 @@ class _TowelState extends State<Towel> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(bottom: Radius.circular(32)),
         ),
-        toolbarOpacity: 0,
+        toolbarOpacity: 1,
         bottomOpacity: 0,
         elevation: 0,
       ),
